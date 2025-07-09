@@ -3,7 +3,7 @@ name: CI Pipeline
 on: 
   push:
     branches:
-     - main
+      - main
 
 jobs:
   test:
@@ -14,9 +14,9 @@ jobs:
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
-      
+
       - name: Install Dependencies
-        run: npm Install
+        run: npm install
 
       - name: Run Tests
         run: npm test
